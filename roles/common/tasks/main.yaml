@@ -10,6 +10,6 @@
 
 - name: download app code
   ansible.builtin.unarchive:
-    src: " https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{ component }}-v2.zip"
+    src: " https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{ COMPONENT }}-v2.zip"
     dest: "{{ APP_LOCATION }}"
     remove_src: yes    
